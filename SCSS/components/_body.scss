@@ -1,0 +1,19 @@
+@use '../base/variables' as vars;
+
+body {
+    background-color: vars.$color-fondo;
+    color: vars.$color-texto;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    flex: 1;
+    padding: vars.$espaciado-grande;
+}

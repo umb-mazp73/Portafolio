@@ -1,0 +1,31 @@
+// Colores
+$color-fondo: #1e1e2f;
+$color-texto: #ffffff;
+$color-header-bg: rgba(30, 30, 47, 0.9);
+$color-enlace: #ccc;
+$color-enlace-hover: #00ff88;
+$color-enlace-principal: #3faaff;
+$color-sombra: rgba(0, 0, 0, 0.3);
+$color-card-bg: #111;
+$color-overlay: rgba(0, 0, 0, 0.5);
+$color-texto-secundario: #aaa;
+$color-borde-verde: #99cc33;
+$color-borde-azul: #0066b2;
+
+// Sombras
+$sombra-10px: 0 2px 10px $color-sombra;
+$sombra-footer: 0 -2px 10px $color-sombra;
+$sombra-proyecto: 0 5px 15px $color-sombra;
+
+// Espaciado
+$espaciado-general: 1rem;
+$espaciado-grande: 2rem;
+$espaciado-xgrande: 4rem;
+
+// Tamaños
+$ancho-max-iconos: 790px;
+$tamaño-img-icono: 80px;
+$radio-img: 50%;
+
+// Transiciones
+$transicion-general: 0.3s ease;
