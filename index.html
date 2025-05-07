@@ -50,9 +50,8 @@
         </article>
 
         <figure class="foto">
-          <img
-            src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png"
-            alt="foto de usuario" loading="lazy">
+          <img src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png" alt="foto de usuario"
+            loading="lazy">
         </figure>
 
         <aside class="habilidades">
@@ -134,8 +133,25 @@
 
     slider.addEventListener('mouseover', () => clearInterval(scrollInterval));
     slider.addEventListener('mouseout', () => scrollInterval = setInterval(autoScroll, 30));
-  </script>
 
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Miguel Zambrano",
+      "url": "https://umb-mazp73.github.io/Portafolio/",
+      "image": "https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png",
+      "jobTitle": "Desarrollador Web",
+      "description": "Miguel Zambrano es un desarrollador web con experiencia en tecnologías modernas como Django, Vue.js, FastAPI y más.",
+      "sameAs": [
+        "https://github.com/MAZP73",
+        "https://www.facebook.com/_nm___ms____13_",
+        "https://www.instagram.com/_nm___ms____13_",
+        "https://drive.google.com/file/d/1jdxDl7FrMAEROF_9ATliO3Fy6dSBbcVA/view"
+      ]
+    }
+    </script>
 </body>
 
 </html>
