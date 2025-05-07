@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umb-mazp73.github.io/Portafolio/sitemap.xml
