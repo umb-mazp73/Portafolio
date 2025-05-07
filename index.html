@@ -114,26 +114,30 @@
   </footer>
 
   <script>
-    const slider = document.getElementById("iconos");
+    window.addEventListener('load', () => {
+      const slider = document.getElementById("iconos");
 
-    let scrollAmount = 0;
-    const scrollStep = 1;
-    const maxScroll = slider.scrollWidth - slider.clientWidth;
+      let scrollAmount = 0;
+      const scrollStep = 1;
+      let maxScroll = slider.scrollWidth - slider.clientWidth;
 
-    function autoScroll() {
-      scrollAmount += scrollStep;
-      if (scrollAmount >= maxScroll) scrollAmount = 0;
-      slider.scrollTo({
-        left: scrollAmount,
-        behavior: 'smooth'
+      function autoScroll() {
+        scrollAmount += scrollStep;
+        if (scrollAmount >= maxScroll) scrollAmount = 0;
+        slider.scrollTo({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      }
+
+      let scrollInterval = setInterval(autoScroll, 30);
+
+      slider.addEventListener('mouseover', () => clearInterval(scrollInterval));
+      slider.addEventListener('mouseout', () => {
+        maxScroll = slider.scrollWidth - slider.clientWidth;
+        scrollInterval = setInterval(autoScroll, 30);
       });
-    }
-
-    let scrollInterval = setInterval(autoScroll, 30);
-
-    slider.addEventListener('mouseover', () => clearInterval(scrollInterval));
-    slider.addEventListener('mouseout', () => scrollInterval = setInterval(autoScroll, 30));
-
+    });
   </script>
   <script type="application/ld+json">
     {
