@@ -3,8 +3,9 @@
 .inicio {
   background-color: vars.$color-fondo;
   padding: vars.$espaciado-grande vars.$espaciado-general;
-  margin-top: vars.$espaciado-grande;
+  margin-top: 50px vars.$espaciado-grande;
   min-height: 100vh;
+  padding-top: 60px;
 }
 
 .perfil,
@@ -13,10 +14,12 @@
   box-shadow: vars.$sombra-10px;
   padding: vars.$espaciado-general;
   margin-top: vars.$espaciado-grande;
+  padding-top: 40px;
 }
 
 .perfil {
   min-height: 100vh;
+  padding-top: 60px;
 }
 
 h1 {
@@ -39,6 +42,16 @@ h2 {
 .perfil h2 {
   font-size: clamp(2rem, 6vw, 4rem);
   margin-bottom: 8rem;
+  color: vars.$color-enlace;
+}
+
+.titulo-seccion {
+  text-align: center;
+  width: 100%;
+  margin-top: -80px;
+  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: bold;
   color: vars.$color-enlace;
 }
 
@@ -132,3 +145,156 @@ a:hover {
 .iconos img:hover {
   transform: scale(1.1);
 }
+
+.seccion-bandera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(to right, #0055A4, white, #EF4135);
+  /* tipo Francia */
+  border: 2px solid #ccc;
+  border-radius: 12px;
+}
+
+.proyecto {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.proyecto h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.proyecto a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #0055A4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.proyecto a:hover {
+  background-color: #003f80;
+}
+
+/* proyectos */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding-top: 100px;
+}
+
+.collage article {
+  position: relative;
+  background-color: vars.$color-card-bg;
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: vars.$sombra-proyecto;
+  overflow: hidden;
+}
+
+.collage img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.collage .overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: vars.$color-overlay;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity vars.$transicion-general;
+  padding: 10px;
+  text-align: center;
+}
+
+.collage article:hover .overlay {
+  opacity: 1;
+}
+
+/* experiencia */
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 80px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.event {
+  text-align: center;
+  flex: 1 1 250px;
+  max-width: 500px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  border-radius: vars.$radio-img;
+  background: #fff;
+  border: 10px solid;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: vars.$radio-img;
+}
+
+.verde .circle {
+  border-color: vars.$color-borde-verde;
+}
+
+.azul .circle {
+  border-color: vars.$color-borde-azul;
+}
+
+.black .circle {
+  border-color: vars.$color-borde-negro;
+}
+
+.event p {
+  color: vars.$color-texto-secundario;
+  font-size: 0.9rem;
+}
+
+

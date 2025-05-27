@@ -18,7 +18,9 @@
   <title>Inicio - Miguel Zambrano | Desarrollador Web</title>
   <meta name="description"
     content="Portafolio de Miguel Zambrano, desarrollador web con experiencia en tecnologías modernas">
-  <link rel="icon" href="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png" type="image/x-icon">
+  <link rel="icon"
+    href="https://th.bing.com/th/id/R.c3631c652abe1185b1874da24af0b7c7?rik=iU3zgg5BZXquIw&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f585e4beacb11b227491c3399.png&ehk=KJ5raEw42F58OwMbJregmc8lzJaJ4Av7LcijF7B0DCc%3d&risl=&pid=ImgRaw&r=0"
+    type="image/x-icon">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google tag (gtag.js) -->
@@ -30,6 +32,104 @@
 
     gtag('config', 'G-H8TV4M2QX5');
   </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Miguel Zambrano",
+      "url": "https://github.com/MAZP73",
+      "image": "https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png",
+      "sameAs": [
+        "https://www.facebook.com/_nm___ms____13_",
+        "https://www.instagram.com/_nm___ms____13_",
+        "https://github.com/MAZP73"
+      ],
+      "jobTitle": "Desarrollador Web",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "description": "Portafolio de Miguel Zambrano, desarrollador web con experiencia en Vue.js, Django, FastAPI, y otras tecnologías modernas.",
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Bachillerato"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad"
+        }
+      ],
+      "knowsAbout": [
+        "HTML", "CSS", "JavaScript", "Vue.js", "Django", "FastAPI", "MySQL", "PostgreSQL", "Tailwind CSS", "Bootstrap", "GitHub", "Figma", "Java", "Python"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CO"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Proyectos Destacados",
+      "itemListElement": [
+        {
+          "@type": "CreativeWork",
+          "name": "Chat Web con WebSockets",
+          "description": "Aplicación de chat en tiempo real con Java, HTML, y WebSockets.",
+          "url": "https://github.com/MAZP73/chat-web"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Dashboard con Vue.js y Django",
+          "description": "Panel administrativo usando Vue.js para frontend y Django REST API.",
+          "url": "https://github.com/MAZP73/dashboard-vue-django"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTermSet",
+      "name": "Habilidades Técnicas",
+      "hasDefinedTerm": [
+        { "@type": "DefinedTerm", "name": "HTML" },
+        { "@type": "DefinedTerm", "name": "CSS" },
+        { "@type": "DefinedTerm", "name": "JavaScript" },
+        { "@type": "DefinedTerm", "name": "Vue.js" },
+        { "@type": "DefinedTerm", "name": "Django" },
+        { "@type": "DefinedTerm", "name": "FastAPI" },
+        { "@type": "DefinedTerm", "name": "Java" },
+        { "@type": "DefinedTerm", "name": "Python" },
+        { "@type": "DefinedTerm", "name": "MySQL" },
+        { "@type": "DefinedTerm", "name": "PostgreSQL" },
+        { "@type": "DefinedTerm", "name": "Bootstrap" },
+        { "@type": "DefinedTerm", "name": "Tailwind CSS" },
+        { "@type": "DefinedTerm", "name": "GitHub" },
+        { "@type": "DefinedTerm", "name": "Figma" }
+      ]
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "degree",
+      "educationalLevel": "Universitario",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Universidad"
+      },
+      "name": "Ingeniería en Sistemas"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "Trabajo freelance o colaboraciones",
+      "email": "miguelzambrano@example.com",
+      "url": "https://github.com/MAZP73",
+      "availableLanguage": ["es"]
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -40,24 +140,29 @@
 
   <!-- navegacion -->
   <header>
-    <nav aria-label="Navegación principal">
-      <ul>
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="experiencia.html">Experiencia</a></li>
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <!-- inicio -->
-    <section class="inicio">
+    <section id="inicio" class="inicio">
       <h1>Miguel <span>.</span> Zambrano</h1>
       <h2>Bienvenidos</h2>
     </section>
 
     <!-- perfil -->
-    <section class="perfil">
+    <section id="perfil" class="perfil">
       <h2>Perfil</h2>
       <div class="perfil-contenido">
         <article class="acerca">
@@ -67,8 +172,8 @@
           <p>Mi objetivo es seguir aprendiendo y creciendo en el mundo del desarrollo web.</p>
 
           <small>
-            <a id="a-click-cv" href="https://drive.google.com/file/d/1OpXbPMVp4UcAil3k9-EFRsTB4tRaUzDz/view?usp=sharing" target="_blank"
-              rel="noopener">
+            <a id="a-click-cv" href="https://drive.google.com/file/d/1OpXbPMVp4UcAil3k9-EFRsTB4tRaUzDz/view?usp=sharing"
+              target="_blank" rel="noopener">
               Ver mi currículum completo (.pdf)
             </a>
           </small>
@@ -92,8 +197,131 @@
       </div>
     </section>
 
+    <!-- Línea de tiempo -->
+    <section id="experiencia" class="timeline">
+      <h2 class="titulo-seccion">Experiencia</h2>
+
+      <div class="event verde">
+        <a href="https://docs.google.com/document/d/1bjpxcDMwgnTFDQXDj2e-d_Qg9DgowQBWGISG7aCvMtE/edit?usp=sharing"
+          aria-label="Bachillerato - Imagen de graduación">
+          <div class="circle">
+            <img src="https://fuzionglobal.org/wp-content/uploads/2018/07/Academic-Cap.png"
+              alt="Icono de sombrero de graduación para Bachillerato" loading="lazy">
+          </div>
+        </a>
+        <h2>Bachillerato</h2>
+      </div>
+
+      <div class="event azul">
+        <a href="https://docs.google.com/document/d/1bjpxcDMwgnTFDQXDj2e-d_Qg9DgowQBWGISG7aCvMtE/edit?usp=sharing"
+          target="_blank" rel="noopener" aria-label="Universidad - Imagen de universidad">
+          <div class="circle">
+            <img src="https://cdn-icons-png.flaticon.com/512/46/46143.png"
+              alt="Icono de universidad para estudios universitarios" loading="lazy">
+          </div>
+        </a>
+        <h2>Universidad</h2>
+      </div>
+
+      <div class="event black">
+        <a href="https://docs.google.com/document/d/1bjpxcDMwgnTFDQXDj2e-d_Qg9DgowQBWGISG7aCvMtE/edit?usp=sharing"
+          target="_blank" rel="noopener" aria-label="certificado - certificado">
+          <div class="circle">
+            <img src="https://th.bing.com/th/id/OIP.0vaqVsAXu-KHFTyIIwRz0wHaHa?rs=1&pid=ImgDetMain"
+              alt="Icono de certificado" loading="lazy">
+          </div>
+        </a>
+        <h2>certificado</h2>
+      </div>
+
+      <div class="event black">
+        <a href="https://docs.google.com/document/d/1bjpxcDMwgnTFDQXDj2e-d_Qg9DgowQBWGISG7aCvMtE/edit?usp=sharing"
+          target="_blank" rel="noopener" aria-label="certificado - Imagen de certificado">
+          <div class="circle">
+            <img src="https://th.bing.com/th/id/OIP.0vaqVsAXu-KHFTyIIwRz0wHaHa?rs=1&pid=ImgDetMain"
+              alt="Icono de certificado" loading="lazy">
+          </div>
+        </a>
+        <h2>certificado</h2>
+      </div>
+    </section>
+
+    <!-- proyectos -->
+    <section id="proyectos" class="collage">
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de portafolio de tienda en línea con Vue.js y Django" loading="lazy">
+          <div class="overlay">Proyecto 1</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de portafolio de blog personal con Vue.js" loading="lazy">
+          <div class="overlay">Proyecto 2</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de página de inicio de sesión con Django y MySQL" loading="lazy">
+          <div class="overlay">Proyecto 3</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de API RESTful con FastAPI y PostgreSQL" loading="lazy">
+          <div class="overlay">Proyecto 4</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de panel administrativo con Tailwind CSS" loading="lazy">
+          <div class="overlay">Proyecto 5</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de panel administrativo con Tailwind CSS" loading="lazy">
+          <div class="overlay">Proyecto 6</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de panel administrativo con Tailwind CSS" loading="lazy">
+          <div class="overlay">Proyecto 7</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de panel administrativo con Tailwind CSS" loading="lazy">
+          <div class="overlay">Proyecto 8</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de panel administrativo con Tailwind CSS" loading="lazy">
+          <div class="overlay">Proyecto 9</div>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/MAZP73" target="_blank" rel="noopener">
+          <img src="https://th.bing.com/th/id/OIP.tUidC71DuFwjno8Thjy2lgHaHa?rs=1&pid=ImgDetMain"
+            alt="Proyecto de panel administrativo con Tailwind CSS" loading="lazy">
+          <div class="overlay">Proyecto 10</div>
+        </a>
+      </article>
+    </section>
+
     <!-- tecnologías -->
-    <section class="tecnologias">
+    <section id="tecnologias" class="tecnologias">
       <h2>Tecnologías</h2>
       <div class="iconos-wrapper">
         <div class="iconos" id="iconos">
@@ -117,7 +345,9 @@
         </div>
       </div>
     </section>
+
   </main>
+
   <!-- Footer -->
   <footer>
     <h4>&copy; 2025 Portafolio. Todos los derechos reservados.</h4>
@@ -164,24 +394,14 @@
         scrollInterval = setInterval(autoScroll, 30);
       });
     });
+
+    const toggleButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    toggleButton.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
   </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Miguel Zambrano",
-      "url": "https://umb-mazp73.github.io/Portafolio/",
-      "image": "https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png",
-      "jobTitle": "Desarrollador Web",
-      "description": "Miguel Zambrano es un desarrollador web con experiencia en tecnologías modernas como Django, Vue.js, FastAPI y más.",
-      "sameAs": [
-        "https://github.com/MAZP73",
-        "https://www.facebook.com/_nm___ms____13_",
-        "https://www.instagram.com/_nm___ms____13_",
-        "https://drive.google.com/file/d/1jdxDl7FrMAEROF_9ATliO3Fy6dSBbcVA/view"
-      ]
-    }
-    </script>
 </body>
 
 </html>
