@@ -318,6 +318,14 @@
     </section>
   </footer>
 
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    toggleButton.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>
